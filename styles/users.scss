@@ -1,0 +1,126 @@
+@import "breakpoints.scss";
+
+.users {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 120px 60px 125px 60px;
+
+  &__title {
+    margin: 0;
+    width: 520px;
+    height: 72px;
+
+    &-text {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 60px;
+      text-transform: uppercase;
+    }
+
+    &-line {
+      width: 80px;
+      height: 2px;
+      background: #1968fc;
+      box-shadow: 0px 2px 0px #d1e1fe;
+    }
+
+    &-text-desktop {
+      display: none;
+
+      margin-left: 40px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 60px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    order: 2;
+    margin-top: 28px;
+
+    .users__card {
+      padding: 20px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      background: #fff;
+      width: 240px;
+      height: 190px;
+
+      &__name {
+        width: 210px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: #1967fa;
+        margin-bottom: 20px;
+      }
+
+      &__text {
+        width: 210px;
+        height: 90px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+@include for-large-screens {
+  .users {
+    position: relative;
+    width: 1165px;
+    height: 450px;
+    margin: 0 160px 120px 120px;
+
+    &__title {
+      width: 1165px;
+      height: 60px;
+
+      &-text {
+        display: none;
+      }
+
+      &-text-desktop {
+        display: block;
+      }
+
+      &-line {
+        left: 0;
+        width: 80px;
+        height: 2px;
+        background: #1968fc;
+        box-shadow: 0px 2px 0px #d1e1fe;
+      }
+    }
+
+    &__cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 38px;
+      margin-left: 40px;
+      width: 1165px;
+
+      .users__card {
+        width: 360px;
+        height: 160px;
+
+        &__text {
+          width: 320px;
+          height: 60px;
+        }
+      }
+    }
+  }
+}

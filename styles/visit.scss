@@ -1,0 +1,29 @@
+@import "breakpoints.scss";
+
+.visit {
+  top: 440px;
+  width: 640px;
+  height: 180px;
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson26/hw1/PleaseVisitDesktopSiteSectionBackground.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-text {
+    text-align: center;
+    width: 520px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+}
+
+@include for-large-screens {
+  .visit {
+    display: none;
+  }
+}

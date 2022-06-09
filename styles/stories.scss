@@ -1,0 +1,120 @@
+@import "breakpoints.scss";
+
+.stories {
+  width: 520px;
+  height: 719px;
+  margin: 60px 60px 0px 60px;
+
+  &__title {
+    width: 520px;
+    height: 72px;
+    margin-bottom: 38px;
+
+    &-text {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 60px;
+      text-transform: uppercase;
+    }
+
+    &-line {
+      width: 80px;
+      height: 2px;
+      background: #1968fc;
+      box-shadow: 0px 2px 0px #d1e1fe;
+    }
+  }
+
+  &__cards {
+    margin-top: 38px;
+
+    .stories__card {
+      width: 520px;
+      height: 270px;
+      margin-bottom: 40px;
+
+      .logo {
+        display: flex;
+        align-items: center;
+
+        &__image {
+          width: 40px;
+          height: 33px;
+          margin-right: 20px;
+        }
+
+        &__name {
+          width: 460px;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 40px;
+          color: #111111;
+        }
+      }
+
+      &-text {
+        margin: 0;
+        margin-top: 20px;
+        margin-left: 60px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 30px;
+        color: #000000;
+      }
+    }
+
+    :last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include for-large-screens {
+  .stories {
+    position: relative;
+    display: block;
+    width: 1160px;
+    height: 420px;
+    margin: 120px 160px 0 120px;
+
+    &__title {
+      width: 1120px;
+      height: 60px;
+      margin-bottom: 48px;
+
+      &-text {
+        margin-left: 40px;
+      }
+
+      &-line {
+        left: 0;
+        width: 80px;
+        height: 2px;
+        background: #1968fc;
+        box-shadow: 0px 2px 0px #d1e1fe;
+      }
+    }
+
+    &__cards {
+      display: flex;
+      margin-left: 40px;
+
+      .stories__card {
+        width: 480px;
+        height: 300px;
+        margin-right: 150px;
+
+        .logo {
+          &__name {
+            display: flex;
+            align-items: center;
+            width: 420px;
+          }
+        }
+      }
+    }
+  }
+}

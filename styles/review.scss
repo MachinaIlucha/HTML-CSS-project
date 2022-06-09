@@ -1,0 +1,71 @@
+@import "breakpoints.scss";
+
+.review {
+  margin-top: 20px;
+
+  &-item {
+    background: #fff;
+    width: 540px;
+    height: 280px;
+    margin: 50px 50px 50px 50px;
+
+    .logo {
+      padding: 40px 0 40px 40px;
+
+      &__image {
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+      }
+
+      &__name {
+        width: 280px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 30px;
+        color: #11223f;
+      }
+
+      &__description {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 30px;
+        color: #1967fa;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+      }
+
+      &__illustration {
+        width: 60px;
+        height: 46px;
+      }
+    }
+  }
+
+  &__description {
+    margin: 0;
+    padding: 0 40px 40px 40px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #11223f;
+  }
+}
+
+@include for-large-screens {
+  .review {
+    margin: 0 160px 0 160px;
+    display: flex;
+
+    &-item {
+      margin: 0;
+      margin-right: 40px;
+    }
+    :nth-child(2) {
+      margin-right: 0;
+    }
+  }
+}
