@@ -5,4 +5,5 @@ this project shows my current skills in these technologies.
 
 <h1 align="center">FindMe</h1>
 
-![Mazer Screenshot]
+![Ilucha](https://user-images.githubusercontent.com/44270738/188267386-89108783-6c49-42df-b586-2fccb85151c8.png)
+
