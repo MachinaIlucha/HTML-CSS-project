@@ -1,7 +1,9 @@
 # FindMe landing site.
 
+You can visit and check what my site is by this link - https://machinailucha.github.io/HTML-CSS-project/
 A couple of months ago I decided to study html/css/scss
 this project shows my current skills in these technologies.
+
 
 <h1 align="center">FindMe</h1>
 
